@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  web:
+    image: ${CONTAINER_REGISTRY-}aspnet-template:${IMAGE_TAG:-dev}
+    container_name: webapi
+    build:
+      context: ../src
+      dockerfile: host/Dockerfile
+    restart: 'no'
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT:-Development}
+      - ASPNETCORE_URLS=http://+:${ASPNETCORE_HTTP_PORT:-8080}
+      - ASPNETCORE_DETAILEDERRORS=${ASPNETCORE_DETAILEDERRORS:-1}
+    ports:
+      - ${ASPNETCORE_HTTP_PORT:-8080}

@@ -1,0 +1,82 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/Host/Host.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "watch",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/src/Host/Host.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary",
+        "--verbose"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/src/Host/"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "type": "docker-build",
+      "label": "docker-build: debug",
+      "dependsOn": [
+        "build"
+      ],
+      "dockerBuild": {
+        "tag": "aspnet-api:dev",
+        "target": "final",
+        "dockerfile": "${workspaceFolder}/src/Host/Dockerfile",
+        "context": "${workspaceFolder}/src",
+        "pull": true
+      },
+      "netCore": {
+        "appProject": "${workspaceFolder}/src/Host/Host.csproj"
+      }
+    },
+    {
+      "type": "docker-run",
+      "label": "docker-run: debug",
+      "dependsOn": [
+        "docker-build: debug"
+      ],
+      "dockerRun": {
+        "containerName": "aspnet-api",
+        "ports": [
+          {
+            "containerPort": 8080,
+            "hostPort": 8080,
+            "protocol": "tcp"
+          }
+        ],
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "ASPNETCORE_URLS": "http://+:8080",
+          "ASPNETCORE_DETAILEDERRORS": "1"
+        }
+      },
+      "netCore": {
+        "appProject": "${workspaceFolder}/src/Host/Host.csproj",
+        "enableDebugging": true
+      }
+    }
+  ]
+}

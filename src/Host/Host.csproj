@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Company.Application1.Host</RootNamespace>
+    <AssemblyName>Company.Application1.Host</AssemblyName>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..</DockerfileContext>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ContainerImageName>aspnet-template</ContainerImageName>
+    <ContainerImageTags>dev</ContainerImageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" Watch="true" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" Watch="true" />
+  </ItemGroup>
+
+</Project>
