@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Company.Application1.Core</RootNamespace>
     <AssemblyName>Company.Application1.Core</AssemblyName>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
 </Project>

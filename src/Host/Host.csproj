@@ -6,8 +6,9 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Company.Application1.Host</RootNamespace>
     <AssemblyName>Company.Application1.Host</AssemblyName>
+    <LangVersion>latest</LangVersion>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..</DockerfileContext>
+    <!-- <DockerfileContext>..</DockerfileContext> -->
   </PropertyGroup>
 
   <PropertyGroup>

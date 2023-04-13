@@ -43,9 +43,12 @@
       ],
       "dockerBuild": {
         "tag": "aspnet-api:dev",
+        "buildArgs": {
+          "CONFIGURATION": "Debug"
+        },
         "target": "final",
-        "dockerfile": "${workspaceFolder}/src/Host/Dockerfile",
-        "context": "${workspaceFolder}/src",
+        "dockerfile": "${workspaceFolder}/Dockerfile",
+        "context": "${workspaceFolder}",
         "pull": true
       },
       "netCore": {

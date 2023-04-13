@@ -5,8 +5,10 @@ services:
     image: ${CONTAINER_REGISTRY-}aspnet-template:${IMAGE_TAG:-dev}
     container_name: webapi
     build:
-      context: ../src
-      dockerfile: host/Dockerfile
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        - CONFIGURATION=Debug
     restart: 'no'
     environment:
       - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT:-Development}
