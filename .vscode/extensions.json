@@ -6,6 +6,8 @@
     "ms-dotnettools.csharp",
     "adrianwilczynski.namespace",
     "k--kato.docomment",
+    "hbenl.vscode-test-explorer",
+    "formulahendry.dotnet-test-explorer",
     "ms-azuretools.vscode-docker",
     "mikestead.dotenv",
     "editorconfig.editorconfig",
