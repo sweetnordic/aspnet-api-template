@@ -1,0 +1,28 @@
+{
+  "dotnet-test-explorer.testProjectPath": "**/*Tests/*.Tests.csproj",
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.useTabStops": false,
+    "editor.autoIndent": "full",
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.vs": true,
+    "**/*.csproj.user": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.vs": true,
+    "**/*.csproj.user": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+}

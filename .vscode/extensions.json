@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "adrianwilczynski.asp-net-core-snippet-pack",
+    "adrianwilczynski.user-secrets",
+    "adrianwilczynski.asp-net-core-switcher",
+    "ms-dotnettools.csharp",
+    "adrianwilczynski.namespace",
+    "k--kato.docomment",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "adrianwilczynski.libman",
+    "josefpihrt-vscode.roslynator"
+  ]
+}

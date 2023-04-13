@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+*.cs             text diff=csharp
+*.razor          text diff=html
+*.csproj         text
+*.sln            text eol=crlf
+
+*.sh eol=lf
+
+*.css            text diff=css
+*.js             text
+
+*.md             text diff=markdown
+
+.editorconfig    text
+.env             text
+
+*.ttf            binary
+*.eot            binary
+*.otf            binary
+*.woff           binary
+*.woff2          binary
