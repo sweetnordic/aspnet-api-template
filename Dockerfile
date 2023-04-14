@@ -2,6 +2,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine AS base
 WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=true \
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
 ARG CONFIGURATION=Release
 WORKDIR /code
 COPY src/Infrastructure/Infrastructure.csproj src/Infrastructure/

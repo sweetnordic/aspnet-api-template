@@ -1,4 +1,7 @@
-**/.classpath
+**/.azure
+**/.azuredevops
+**/.dockerignore
+**/.devcontainer
 **/.dockerignore
 **/.docker
 **/.env
@@ -17,6 +20,7 @@
 **/azds.yaml
 **/bin
 **/obj
+**/docs
 **/charts
 **/docker-compose*
 **/Dockerfile*
