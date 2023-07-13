@@ -9,16 +9,22 @@ public static class Program
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddHealthChecks();
 
         var app = builder.Build();
+
+        // app.UseHttpsRedirection();
 
         app.UseSwagger();
         app.UseSwaggerUI();
 
         app.UseAuthorization();
 
-        app.MapControllers();
+        app.UseWelcomePage("/");
 
+        app.UseHealthChecks("/api/health");
+
+        app.MapControllers();
         app.Run();
     }
 }

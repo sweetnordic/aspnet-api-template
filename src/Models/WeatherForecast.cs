@@ -1,6 +1,6 @@
 using System;
 
-namespace Company.Application1;
+namespace Company.Application1.Models;
 
 public class WeatherForecast
 {
