@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B471B3FD-BDAB-44AC-A01B-C2158E4BBF78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{46370B95-2DFF-44D0-9295-98840264851D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src\src.csproj", "{55087FCB-A958-460E-AC14-3B589FFBC021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2EB395F-8336-46EF-84A4-7E0702C91FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EB395F-8336-46EF-84A4-7E0702C91FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EB395F-8336-46EF-84A4-7E0702C91FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EB395F-8336-46EF-84A4-7E0702C91FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496DD942-4494-4289-A50B-929CB54F5254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496DD942-4494-4289-A50B-929CB54F5254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496DD942-4494-4289-A50B-929CB54F5254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496DD942-4494-4289-A50B-929CB54F5254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86948662-46BC-4BA9-AB4E-C3A96967EAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86948662-46BC-4BA9-AB4E-C3A96967EAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86948662-46BC-4BA9-AB4E-C3A96967EAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86948662-46BC-4BA9-AB4E-C3A96967EAC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55087FCB-A958-460E-AC14-3B589FFBC021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55087FCB-A958-460E-AC14-3B589FFBC021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55087FCB-A958-460E-AC14-3B589FFBC021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55087FCB-A958-460E-AC14-3B589FFBC021}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55087FCB-A958-460E-AC14-3B589FFBC021} = {46370B95-2DFF-44D0-9295-98840264851D}
+	EndGlobalSection
+EndGlobal

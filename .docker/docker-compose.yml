@@ -1,11 +1,11 @@
 version: '3.9'
 
 services:
-  web:
-    image: ${CONTAINER_REGISTRY-}aspnet-template:${IMAGE_TAG:-dev}
+  webapi:
+    image: ${CONTAINER_REGISTRY-}aspnet-api-template:${IMAGE_TAG:-dev}
     container_name: webapi
     build:
-      context: ..
+      context: ../src
       dockerfile: Dockerfile
       args:
         - CONFIGURATION=Debug

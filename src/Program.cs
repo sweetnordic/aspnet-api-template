@@ -1,4 +1,4 @@
-namespace Company.Application1.Host;
+namespace Company.Application1;
 
 public static class Program
 {

@@ -45,7 +45,7 @@ indent_size = 2
 [*.json]
 indent_size = 2
 
-[*.cs]
+[*.{cs,cshtml}]
 insert_final_newline = true
 indent_size = 4
 

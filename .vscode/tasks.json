@@ -11,7 +11,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/src/Host/Host.csproj",
+        "${workspaceFolder}/src/src.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -25,13 +25,13 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/src/Host/Host.csproj",
+        "${workspaceFolder}/src/src.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary",
         "--verbose"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/src/Host/"
+        "cwd": "${workspaceFolder}/src/"
       },
       "problemMatcher": "$msCompile"
     },
@@ -47,12 +47,12 @@
           "CONFIGURATION": "Debug"
         },
         "target": "final",
-        "dockerfile": "${workspaceFolder}/Dockerfile",
-        "context": "${workspaceFolder}",
+        "dockerfile": "${workspaceFolder}/src/Dockerfile",
+        "context": "${workspaceFolder}/src",
         "pull": true
       },
       "netCore": {
-        "appProject": "${workspaceFolder}/src/Host/Host.csproj"
+        "appProject": "${workspaceFolder}/src/src.csproj"
       }
     },
     {
@@ -77,7 +77,7 @@
         }
       },
       "netCore": {
-        "appProject": "${workspaceFolder}/src/Host/Host.csproj",
+        "appProject": "${workspaceFolder}/src/src.csproj",
         "enableDebugging": true
       }
     }

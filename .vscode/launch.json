@@ -6,9 +6,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/Host/bin/Debug/net7.0/Company.Application1.Host.dll",
+      "program": "${workspaceFolder}/src/bin/Debug/net7.0/Company.Application1.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/Host",
+      "cwd": "${workspaceFolder}/src",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
@@ -24,9 +24,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "watch",
-      "program": "${workspaceFolder}/src/Host/bin/Debug/net7.0/Company.Application1.Host.dll",
+      "program": "${workspaceFolder}/src/bin/Debug/net7.0/Company.Application1.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/Host",
+      "cwd": "${workspaceFolder}/src",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
@@ -50,7 +50,7 @@
       },
       "preLaunchTask": "docker-run: debug",
       "netCore": {
-        "appProject": "${workspaceFolder}/src/Host/Host.csproj",
+        "appProject": "${workspaceFolder}/src/src.csproj",
       }
     }
   ]

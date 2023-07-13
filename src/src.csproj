@@ -4,26 +4,22 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>Company.Application1.Host</RootNamespace>
-    <AssemblyName>Company.Application1.Host</AssemblyName>
+    <RootNamespace>Company.Application1</RootNamespace>
+    <AssemblyName>Company.Application1</AssemblyName>
     <LangVersion>latest</LangVersion>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <!-- <DockerfileContext>..</DockerfileContext> -->
   </PropertyGroup>
 
   <PropertyGroup>
-    <ContainerImageName>aspnet-template</ContainerImageName>
+    <ContainerImageName>aspnet-web-template</ContainerImageName>
     <ContainerImageTags>dev</ContainerImageTags>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" Watch="true" />
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" Watch="true" />
   </ItemGroup>
 
 </Project>
