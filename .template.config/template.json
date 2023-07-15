@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "SweetNordic",
-  "identity": "SweetNordic.AspNet.Template",
+  "identity": "SweetNordic.AspNet.Api.Template",
   "name": "SweetNordic ASP.NET WebAPI Template",
   "description": "ASP.NET Template for .NET 7.0 WebApi with Controller.",
   "classifications": ["WebAPI", "ASP.NET", "Template", "MacOS", "Windows", "Web"],
@@ -9,7 +9,7 @@
     "language": "C#",
     "type": "solution"
   },
-  "shortName": "aspnet-template",
+  "shortName": "aspnet-api-template",
   "sourceName": "Company.Application1",
   "preferNameDirectory": true,
   "sources": [

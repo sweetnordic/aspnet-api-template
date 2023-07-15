@@ -1,6 +1,13 @@
 {
   "testExplorer.useNativeTesting": true,
-  "dotnet-test-explorer.testProjectPath": "**/tests/**/*.Tests.csproj",
+  "dotnet-test-explorer.testProjectPath": "test/**/*.Tests.csproj",
+  "dotnet-test-explorer.addProblems": true,
+  "dotnet-test-explorer.enableTelemetry": false,
+  "dotnet-test-explorer.showCodeLens": true,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "redhat.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "rest-client.enableTelemetry": false,
   "[csharp]": {
     "editor.tabSize": 4,
     "editor.useTabStops": false,
